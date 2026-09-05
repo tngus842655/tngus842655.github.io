@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ══════════════════════════════════════════════════════════════════
+     앱 소개 페이지 틀. 새 앱을 추가할 때:
+       1. 이 폴더(apps/_template)를 apps/<slug>/ 로 복사 (slug는 영문 소문자: firepath, minigame30, newworld …)
+       2. 자산을 assets/<slug>/ 에 넣는다: icon-192.png, feature-graphic.png(1024×500), screen-*.jpg(540 너비)
+       3. 【 】 로 표시된 곳을 전부 채우고, 아래 robots noindex 메타를 지운다
+       4. 홈(index.html) 앱 목록에 카드 추가, sitemap.xml에 URL 추가
+     이 파일 자체는 noindex라 검색에 안 잡힌다.
+     ══════════════════════════════════════════════════════════════════ -->
+<meta name="robots" content="noindex">
+<title>【앱 이름】 - 【짧은 부제】 | 엔에스에이치 앱</title>
+<meta name="description" content="【검색 결과에 보일 한두 문장. 80~120자】">
+<link rel="canonical" href="https://tngus842655.github.io/apps/【slug】/">
+<link rel="icon" href="../../assets/【slug】/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="../../assets/【slug】/icon-192.png">
+<link rel="stylesheet" href="../../assets/site.css">
+<meta name="theme-color" content="#5fa8e8">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="엔에스에이치 앱">
+<meta property="og:title" content="【앱 이름】 - 【짧은 부제】">
+<meta property="og:description" content="【한 줄 소개】">
+<meta property="og:url" content="https://tngus842655.github.io/apps/【slug】/">
+<meta property="og:image" content="https://tngus842655.github.io/assets/【slug】/feature-graphic.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="【앱 이름】 - 【짧은 부제】">
+<meta name="twitter:description" content="【한 줄 소개】">
+<meta name="twitter:image" content="https://tngus842655.github.io/assets/【slug】/feature-graphic.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "【앱 이름】",
+  "description": "【한 줄 소개】",
+  "url": "https://tngus842655.github.io/apps/【slug】/",
+  "image": "https://tngus842655.github.io/assets/【slug】/icon-192.png",
+  "applicationCategory": "【GameApplication 또는 FinanceApplication 등】",
+  "operatingSystem": "Android",
+  "inLanguage": "ko",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "author": { "@type": "Organization", "name": "엔에스에이치", "email": "tngus842655@gmail.com" }
+}
+</script>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="../../"><span class="mark">N</span>엔에스에이치 앱</a>
+    <nav class="menu" aria-label="페이지 내 이동">
+      <a href="../../#apps">다른 앱</a>
+      <a href="#how">특징</a>
+      <a href="#shots">화면</a>
+      <a href="#download">다운로드</a>
+    </nav>
+  </header>
+</div>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1><small>【분류 한 마디, 예: 돈 합치기 물리 퍼즐】</small>【큰 제목 한두 줄】</h1>
+        <p class="lead">【두세 문장 소개】</p>
+        <div class="badges">
+          <span class="badge">🆓 무료</span>
+          <span class="badge">【배지 2】</span>
+          <span class="badge">【배지 3】</span>
+        </div>
+        <div class="cta" id="download">
+          <!-- 없는 스토어 버튼은 지운다 -->
+          <a class="btn primary" href="https://play.google.com/store/apps/details?id=【패키지이름】" rel="noopener">
+            <span class="ic">▶</span><span>Google Play<small>안드로이드</small></span>
+          </a>
+          <a class="btn toss" href="intoss://【앱인토스 appName】">
+            <span class="ic">💙</span><span>앱인토스에서 열기<small>토스 앱 → 앱인토스 → “【앱 이름】” 검색</small></span>
+          </a>
+        </div>
+        <p class="note">앱인토스 버튼은 토스 앱이 설치된 휴대폰에서만 열려요.</p>
+      </div>
+      <figure class="hero-art">
+        <img src="../../assets/【slug】/feature-graphic.png" alt="【앱 이름】 대표 이미지" width="1024" height="500">
+      </figure>
+    </div>
+  </div>
+
+  <section id="how">
+    <div class="wrap">
+      <h2>【특징 섹션 제목, 예: 이렇게 즐겨요】</h2>
+      <p class="sub">【한 줄 부연】</p>
+      <div class="cards">
+        <div class="card"><div class="em">【이모지】</div><h3>【특징 1】</h3><p>【설명】</p></div>
+        <div class="card"><div class="em">【이모지】</div><h3>【특징 2】</h3><p>【설명】</p></div>
+        <div class="card"><div class="em">【이모지】</div><h3>【특징 3】</h3><p>【설명】</p></div>
+        <div class="card"><div class="em">【이모지】</div><h3>【특징 4】</h3><p>【설명】</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="shots" class="tight">
+    <div class="wrap">
+      <h2>앱 화면</h2>
+      <p class="sub">실제 화면이에요.</p>
+      <div class="shots">
+        <figure class="shot"><img src="../../assets/【slug】/screen-1.jpg" alt="【화면 설명】" loading="lazy" width="540" height="1035"><figcaption>【캡션】</figcaption></figure>
+        <figure class="shot"><img src="../../assets/【slug】/screen-2.jpg" alt="【화면 설명】" loading="lazy" width="540" height="1035"><figcaption>【캡션】</figcaption></figure>
+        <figure class="shot"><img src="../../assets/【slug】/screen-3.jpg" alt="【화면 설명】" loading="lazy" width="540" height="1035"><figcaption>【캡션】</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="info" class="tight">
+    <div class="wrap">
+      <h2>알아 두세요</h2>
+      <p class="sub">【한 줄 부연】</p>
+      <div class="facts">
+        <div class="fact"><div class="em">🙅</div><div><b>회원가입이 없어요</b><span>【수집하는 정보가 있으면 여기에 솔직하게】</span></div></div>
+        <div class="fact"><div class="em">🆓</div><div><b>무료 + 광고</b><span>【광고·유료 상품 여부】</span></div></div>
+        <div class="fact"><div class="em">📶</div><div><b>【항목】</b><span>【설명】</span></div></div>
+      </div>
+      <!-- 게임이면 등급분류 표시(게임산업법 제33조). 게임이 아니면 이 블록을 지운다 -->
+      <div class="rating">
+        <div class="mark">전체<br>이용가</div>
+        <div><b>게임물관리위원회 등급분류 · 【등급】</b><small>등급분류번호 【번호】 (【결정일】)</small></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a href="../../">엔에스에이치 앱 홈</a>
+      <a href="【개인정보처리방침 URL】">개인정보처리방침</a>
+    </div>
+    <dl>
+      <dt>상호</dt><dd>엔에스에이치</dd>
+      <dt>대표자</dt><dd>남수현</dd>
+      <dt>사업자등록번호</dt><dd>374-38-01558</dd>
+      <dt>문의</dt><dd><a href="mailto:tngus842655@gmail.com">tngus842655@gmail.com</a></dd>
+    </dl>
+    <div>© 2026 엔에스에이치 · 【앱 이름】</div>
+  </div>
+</footer>
+</body>
+</html>
