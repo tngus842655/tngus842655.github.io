@@ -14,7 +14,7 @@ GitHub 사용자 사이트(루트 도메인 `https://tngus842655.github.io/`). �
 | `assets/site.js` | 공용 스크립트. PC에서 앱인토스(`intoss://`) 링크를 누르면 여는 대신 "휴대폰의 토스 앱에서 열려요" 안내 토스트를 띄운다. 휴대폰에서는 관여하지 않는다 |
 | `assets/<slug>/` | 앱별 자산: `icon-192.png`, `feature-graphic.png`(1024×500), `screen-*.jpg`(540 너비) |
 | `assets/brand/` | 사이트 공용 브랜드 자산. `logo-96/192/512.png`(NSH 로고, 투명 배경: 헤더 마크·파비콘·조직 로고), `apple-touch-icon-180.png`(흰 배경, iOS 홈 화면용). 원본 PNG는 `C:/Workspace/brand/site/` |
-| `assets/icons/` | 플랫폼 공식 아이콘: `google-play.svg`(Google Play 삼각형), `toss.png`(토스 심볼, static.toss.im 원본). 버튼 안에서 `<img class="ic">`로 쓴다 |
+| `assets/icons/` | 플랫폼 공식 아이콘: `google-play.svg`(Google Play 삼각형), `toss.png`(토스 심볼, static.toss.im 원본), `youtube.svg`(유튜브 아이콘, 헤더의 채널 버튼). 버튼 안에서 `<img class="ic">`로 쓴다 |
 | `app-ads.txt` | AdMob 판매자 인증. Play 콘솔 스토어 등록정보의 **개발자 웹사이트**가 루트 주소여야 AdMob이 읽는다. 앱이 늘어도 파일은 하나 |
 | `robots.txt` / `sitemap.xml` | 검색 엔진용. 페이지를 추가하면 sitemap에 URL을 넣는다 |
 | `404.html` | 없는 주소 안내 |

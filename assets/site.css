@@ -31,6 +31,9 @@ header.top { display:flex; align-items:center; justify-content:space-between; ga
 nav.menu { display:flex; gap:6px; flex-wrap:wrap; justify-content:flex-end; }
 nav.menu a { font-size:14px; color:var(--muted); text-decoration:none; padding:6px 10px; border-radius:8px; }
 nav.menu a:hover { background:var(--card); color:var(--fg); }
+nav.menu a.yt { display:inline-flex; align-items:center; gap:7px; padding:5px 12px 5px 9px; border-radius:999px; background:var(--card); border:1px solid var(--line); color:var(--fg); font-weight:800; }
+nav.menu a.yt:hover { border-color:#ff0000; color:#ff0000; }
+nav.menu a.yt img { width:20px; height:14px; display:block; }
 
 /* ── 히어로 ─────────────────────────────────────────── */
 .hero { background:linear-gradient(180deg, var(--sky) 0%, var(--bg) 100%); padding:36px 0 28px; }
@@ -146,6 +149,8 @@ footer dd { margin:0; }
   .featured .cta .btn.ghost img.ic { width:18px; height:18px; }
   .featured .cta .btn.ghost .lbl { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
   .featured .cta .cta-soon { display:none; }
+  nav.menu a.yt { padding:6px 9px; }
+  nav.menu a.yt .lbl { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
 }
 
 /* ── 안내 토스트 (site.js가 PC에서 앱인토스 링크를 누를 때 띄운다) ── */
