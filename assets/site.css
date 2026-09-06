@@ -27,7 +27,7 @@ figure { margin:0; }
 /* ── 상단 바 ─────────────────────────────────────────── */
 header.top { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:14px 0; }
 .brand { display:flex; align-items:center; gap:10px; font-weight:800; font-size:17px; color:var(--fg); text-decoration:none; white-space:nowrap; }
-.brand img { width:34px; height:34px; border-radius:50%; }
+.brand img { width:34px; height:34px; }
 nav.menu { display:flex; gap:6px; flex-wrap:wrap; justify-content:flex-end; }
 nav.menu a { font-size:14px; color:var(--muted); text-decoration:none; padding:6px 10px; border-radius:8px; }
 nav.menu a:hover { background:var(--card); color:var(--fg); }
@@ -49,6 +49,8 @@ nav.menu a:hover { background:var(--card); color:var(--fg); }
 .btn.primary { background:var(--accent); color:#fff; box-shadow:0 8px 20px rgba(63,143,220,.28); }
 .btn.toss, .btn.ghost { background:var(--card); color:var(--fg); border-color:var(--line); }
 .btn .ic { font-size:20px; line-height:1; }
+.btn img.ic { width:22px; height:22px; flex:none; }
+.btn.sm img.ic { width:16px; height:16px; }
 .btn small { display:block; font-size:11px; font-weight:600; opacity:.75; line-height:1.2; }
 .btn.sm { padding:9px 14px; font-size:14px; border-radius:10px; gap:6px; }
 .hero-art { border-radius:18px; overflow:hidden; box-shadow:var(--shadow); border:1px solid var(--line); }
@@ -141,6 +143,7 @@ footer dd { margin:0; }
 @media (max-width: 540px) {
   .featured .cta { flex-wrap:nowrap; gap:8px; }
   .featured .cta .btn.ghost { padding:9px 12px; }
+  .featured .cta .btn.ghost img.ic { width:18px; height:18px; }
   .featured .cta .btn.ghost .lbl { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
   .featured .cta .cta-soon { display:none; }
 }
