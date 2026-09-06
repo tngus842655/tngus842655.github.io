@@ -12,7 +12,7 @@ GitHub 사용자 사이트(루트 도메인 `https://tngus842655.github.io/`). �
 | `apps/_template/` | 새 앱 소개 페이지 틀 (noindex, 링크 안 걸림) |
 | `assets/site.css` | 공용 스타일. 색·간격은 여기서만 바꾼다 |
 | `assets/<slug>/` | 앱별 자산: `icon-192.png`, `feature-graphic.png`(1024×500), `screen-*.jpg`(540 너비) |
-| `assets/brand/` | 사이트 공용 브랜드 자산. `logo-96/192/512.png`(원반 로고: 헤더 마크·파비콘·조직 로고), `banner-1230x410.jpg`(홈 상단 배너), `og-home-1200x630.jpg`(홈 공유 미리보기). 원본 PNG는 `C:/Workspace/brand/` |
+| `assets/brand/` | 사이트 공용 브랜드 자산. `logo-96/192/512.png`(원반 로고: 헤더 마크·파비콘·조직 로고), `og-home-1200x630.jpg`(홈 공유 미리보기). 원본 PNG는 `C:/Workspace/brand/` |
 | `app-ads.txt` | AdMob 판매자 인증. Play 콘솔 스토어 등록정보의 **개발자 웹사이트**가 루트 주소여야 AdMob이 읽는다. 앱이 늘어도 파일은 하나 |
 | `robots.txt` / `sitemap.xml` | 검색 엔진용. 페이지를 추가하면 sitemap에 URL을 넣는다 |
 | `404.html` | 없는 주소 안내 |
