@@ -27,8 +27,7 @@ figure { margin:0; }
 /* ── 상단 바 ─────────────────────────────────────────── */
 header.top { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:14px 0; }
 .brand { display:flex; align-items:center; gap:10px; font-weight:800; font-size:17px; color:var(--fg); text-decoration:none; white-space:nowrap; }
-.brand img { width:34px; height:34px; border-radius:9px; }
-.brand .mark { width:30px; height:30px; border-radius:9px; background:linear-gradient(135deg, var(--accent), #6fd0ff); display:grid; place-items:center; color:#fff; font-size:15px; font-weight:900; }
+.brand img { width:34px; height:34px; border-radius:50%; }
 nav.menu { display:flex; gap:6px; flex-wrap:wrap; justify-content:flex-end; }
 nav.menu a { font-size:14px; color:var(--muted); text-decoration:none; padding:6px 10px; border-radius:8px; }
 nav.menu a:hover { background:var(--card); color:var(--fg); }
@@ -96,6 +95,7 @@ section p.sub { margin:0 0 22px; color:var(--muted); }
 .hero.slim { padding:26px 0 8px; }
 .hero.slim h1 { font-size:clamp(24px, 3.6vw, 32px); margin-bottom:6px; }
 .hero.slim p.lead { font-size:15px; margin-bottom:0; }
+.hero-banner { display:block; width:100%; height:auto; border-radius:16px; border:1px solid var(--line); box-shadow:var(--shadow); margin:2px 0 18px; }
 .app-list { display:grid; gap:14px; padding-top:16px; }
 .featured { display:flex; gap:18px; align-items:center; background:var(--card); border:1px solid var(--line); border-radius:20px; padding:20px; box-shadow:var(--shadow); }
 .featured img { width:84px; height:84px; border-radius:20px; flex:none; }
