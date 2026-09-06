@@ -147,3 +147,7 @@ footer dd { margin:0; }
   .featured .cta .btn.ghost .lbl { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
   .featured .cta .cta-soon { display:none; }
 }
+
+/* ── 안내 토스트 (site.js가 PC에서 앱인토스 링크를 누를 때 띄운다) ── */
+.toast { position:fixed; left:50%; bottom:28px; transform:translate(-50%, 12px); background:var(--fg); color:var(--bg); padding:12px 18px; border-radius:12px; font-size:14px; font-weight:700; box-shadow:var(--shadow); opacity:0; transition:opacity .2s, transform .2s; pointer-events:none; z-index:50; max-width:calc(100% - 40px); text-align:center; }
+.toast.show { opacity:1; transform:translate(-50%, 0); }

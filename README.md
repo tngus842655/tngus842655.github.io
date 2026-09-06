@@ -11,6 +11,7 @@ GitHub 사용자 사이트(루트 도메인 `https://tngus842655.github.io/`). �
 | `apps/<slug>/index.html` | 앱별 소개 페이지 (`apps/moneygame/` 등) |
 | `apps/_template/` | 새 앱 소개 페이지 틀 (noindex, 링크 안 걸림) |
 | `assets/site.css` | 공용 스타일. 색·간격은 여기서만 바꾼다 |
+| `assets/site.js` | 공용 스크립트. PC에서 앱인토스(`intoss://`) 링크를 누르면 여는 대신 "휴대폰의 토스 앱에서 열려요" 안내 토스트를 띄운다. 휴대폰에서는 관여하지 않는다 |
 | `assets/<slug>/` | 앱별 자산: `icon-192.png`, `feature-graphic.png`(1024×500), `screen-*.jpg`(540 너비) |
 | `assets/brand/` | 사이트 공용 브랜드 자산. `logo-96/192/512.png`(NSH 로고, 투명 배경: 헤더 마크·파비콘·조직 로고), `apple-touch-icon-180.png`(흰 배경, iOS 홈 화면용), `og-home-1200x630.jpg`(홈 공유 미리보기). 원본 PNG는 `C:/Workspace/brand/site/` |
 | `assets/icons/` | 플랫폼 공식 아이콘: `google-play.svg`(Google Play 삼각형), `toss.png`(토스 심볼, static.toss.im 원본). 버튼 안에서 `<img class="ic">`로 쓴다 |
